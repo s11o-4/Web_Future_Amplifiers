@@ -10,3 +10,9 @@
     font-family: monospace;
 }
 
+
+@media (min-width: 200px) and (max-width: 500px){
+    .titlenav{
+      visibility: hidden;
+    }
+}
