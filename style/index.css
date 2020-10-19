@@ -1,6 +1,7 @@
-
+/* css de navbar */
 .datanav{
-    font-family: monospace;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
     margin-right: 10px;
 }
 .navimg{
@@ -15,16 +16,40 @@
     
 }
 .titlenav{
-    font-family: monospace;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
 }
 
 .awesome-brand{
     background-color: black;
     color: white;
+    margin-bottom: 300px;
 }
+
+/* css de album */
+.img-albums{
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 120px 670px 20px 670px 120px;
+   grid-auto-rows: 200px;
+   /* tarjeta completa 460 */
+}
+
+.album-1{
+    grid-gap: 10px;
+    grid-column: 2 / 3;
+    
+}
+
+
 
 /* media para celular */
 @media (min-width: 200px) and (max-width: 500px){
+    /* navbar */
     .titlenav{
       visibility: hidden;
     }
@@ -35,6 +60,7 @@
 
 /* media para ipad */
 @media (min-width: 500px) and (max-width: 990px){
+    /* navbar */
     .navimg{
         margin: auto;
     }
