@@ -1,9 +1,9 @@
 window.onload = function () {
     // Variables
     const IMAGENES = [
-        './images/pexels-méline-waxx-165971.jpg',
-        './images/pexels-méline-waxx-165971.jpg',
-        './images/pexels-méline-waxx-165971.jpg'
+        'images/pexels-méline-waxx-165971.jpg',
+        'images/pexels-brett-sayles-1205062.jpg',
+        'images/pexels-eberhard-grossgasteiger-5454234.jpg'
     ];
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
     let posicionActual = 0;
