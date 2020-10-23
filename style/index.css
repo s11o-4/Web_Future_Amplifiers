@@ -1,6 +1,4 @@
-/* body{
-    background-color: #0d0f1b;
-} */
+
 
 /* css de navbar */
 .datanav{
@@ -72,17 +70,68 @@
 
 
 /* css para el carrusel */
-.carousel {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-}
-#imagen {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
+
+.div-carousel{
+    display: grid;
+    grid-column: 2 / 5;
+    margin-top: 500px;
+    margin-left:120px;
+    margin-right: 120px;
+    margin-bottom: 25px;
+   
 }
 
+.carousel-inner{
+    height: 550px;
+}
+
+.btn-car{
+    width: 40px;
+    height: 40px;
+}
+
+/* referencias */
+.ref{
+    position: absolute;
+}
+
+/* buy-card */
+
+.buy-card{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px 670px 20px 670px 120px;
+
+}
+
+.img-buy{
+    grid-column: 2 / 3;
+    width: 670px;
+}
+
+.buy-message{
+   grid-column: 4 / 5;
+}
+
+/* footer */
+
+.footer{
+  background-color: black;
+  color: wheat;
+  height: 150px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+.foot-logo{
+   align-self: flex-start;
+}
 
 
 /* media para celular */

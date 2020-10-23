@@ -15,7 +15,9 @@
     
     <!-- letter styles -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">     
-    
+     
+    <!-- icons -->
+    <link rel="stylesheet" href=“tu_dominio_web/css_root/flaticon.css" type="text/css">    
     <title>Amplifiers</title>
   
   </head>
@@ -52,13 +54,13 @@
 
         </nav>
     </nav>
-     
+
     <!-- here is the awesome logo and divide the navbar with the content-->
-    <main class="awesome-brand container-fluyd d-flex justify-content-center align-items-center">
+    <div class="awesome-brand container-fluyd d-flex justify-content-center align-items-center">
       <div class="display-3">
           Spider Amplifiers
       </div>
-    </main>
+    </div>
     
     <!-- here is the subtitule -->
     <div class="subtitule d-flex justify-content-start align-items-center">
@@ -74,7 +76,7 @@
     <div class="album-1">
       <div class="card">
         <img src="./images/pexels-brett-sayles-1431796.jpg" alt="img" class="img-albums card-img-top">
-        <div class="album-content card-boy">
+        <div class="album-content card-body">
           <h4 class="title-album">CALIDAD-PRECIO</h4>
           <P class="text-muted">
             Este es el mejor amplificador que existe en cuanto a calidad precio
@@ -88,9 +90,9 @@
     <div class="album-2">
       <div class="card">
         <img src="./images/pexels-méline-waxx-165971.jpg" alt="img" class="img-albums card-img-top">
-        <div class="album-content card-boy">
-          <h4 class="title-album">CALIDAD-PRECIO</h4>
-          <P class="text-muted">
+        <div class="album-content card-body">
+          <h4 class="title-album card-title">CALIDAD-PRECIO</h4>
+          <P class="card-text text-muted">
             Este es el mejor amplificador que existe en cuanto a calidad precio
             ya que con sus potentes 30 watts y tarjeta de alta fidelidad 
             podras amplificar cualquier señal, y a un bajisimo costo
@@ -102,9 +104,9 @@
     <div class="album-3">
       <div class="card">
         <img src="./images/pexels-méline-waxx-165971.jpg" alt="img" class="img-albums card-img-top">
-        <div class="album-content card-boy">
-          <h4 class="title-album">CALIDAD-PRECIO</h4>
-          <P class="text-muted">
+        <div class="album-content card-body">
+          <h4 class="title-album card-title">CALIDAD-PRECIO</h4>
+          <P class="card-text text-muted">
             Este es el mejor amplificador que existe en cuanto a calidad precio
             ya que con sus potentes 30 watts y tarjeta de alta fidelidad 
             podras amplificar cualquier señal, y a un bajisimo costo
@@ -117,8 +119,8 @@
       <div class="card">
         <img src="./images/pexels-brett-sayles-1431796.jpg" alt="img" class="img-albums card-img-top">
         <div class="album-content card-boy">
-          <h4 class="title-album">CALIDAD-PRECIO</h4>
-          <P class="text-muted">
+          <h4 class="card-title title-album">CALIDAD-PRECIO</h4>
+          <P class="text-muted card-text">
             Este es el mejor amplificador que existe en cuanto a calidad precio
             ya que con sus potentes 30 watts y tarjeta de alta fidelidad 
             podras amplificar cualquier señal, y a un bajisimo costo
@@ -128,22 +130,78 @@
     </div>
 
   </div>
+   
+
+  <!-- carousel -->
+  <div class="div-carousel">
+    <div id="carousel-main" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner bg-dark">
+        <div class="carousel-item active">
+          <img class="img-car d-block w-100" src="./images/black.jpg" alt="img-car-01">
+        </div>
+        <div class="carousel-item">
+          <img class="img-car d-block w-100" src="./images/black.jpg" alt="img-car-02">
+        </div>
+        <div class="carousel-item">
+          <img class="img-car d-block w-100" src="./images/black.jpg" alt="img-car-03">
+        </div>
+      </div>
+
+        <a class="carousel-control-prev active" href="#carousel-main" role="button" data-slide="prev">
+          <img src="./icons/izquierda.png" alt="L" class="btn-car carousel-control-prev-icon" aria-hidden="false">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next active" href="#carousel-main" role="button" data-slide="next">
+          <img src="./icons/derecha.png" alt="R" class="btn-car carousel-control-next-icon" aria-hidden="true">
+          <span class="sr-only">Next</span> 
+        </a>
+
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-main" data-slide-to="1"></li>
+          <li data-target="#carousel-main" data-slide-to="2"></li>
+        </ol>
+        
+    </div>
+  </div>
   
+  <!-- references -->
+  <p class="references text-muted text-center">
+    Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect"> Pixel perfect </a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+  </p>
+   
+  <br>
+  <br>
+  <hr>
+
+  <!-- buy -->
+  
+  <div class="buy-card">
+    <img class="img-buy" src="./images/pexels-pixabay-326058.jpg" alt="img">
+    <p class="buy-message">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ipsa vel
+      itaque deleniti quae cupiditate nam, facilis molestias voluptates, debitis esse suscipit, 
+      id mollitia voluptate quaerat. Accusamus commodi laudantium numquam!
+      <button class="btn btn-primary">
+        Buy!
+      </button>
+    </p>
+  </div>
+
+
   <!-- 512 pixels aprox -->
   <div style="height: 520px;"></div>
 
+  <!-- here is the carousel -->
 
-<div class="carousel">
-    <button id="retroceder"><</button>
-    <div id="imagen"></div>
-    <button id="avanzar">></button>
-</div>
-<div class="controles">
-    <button id="play">Play</button>
-    <button id="stop" disabled>Stop</button>
-</div>
-
-
+  <footer class="footer">
+    <div class="content-footer">
+      <span class="text-center display-3 pt-5">
+        Spider Web
+      </span>
+    </div>
+  </footer>
+  
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
