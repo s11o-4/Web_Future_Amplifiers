@@ -39,18 +39,53 @@ body{
 
 
 /* css de album */
-.img-albums{
-    border-radius: 10px;
-}
 
 .content{
+   margin-bottom: 150px;
+   
    display: grid;
    grid-template-columns: 120px 670px 20px 670px 120px;
    grid-auto-rows: 200px;
    grid-gap: 20px;
    /* tarjeta completa 600 */
-   margin-bottom: 150px;
 }
+
+.card{
+    background-color:#031321;   
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: #2196f3;
+}
+
+
+.card-body{
+    background-color:#031321;   
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #2196f3;
+}
+
+.card-title{
+    color: gray;
+}
+
+.img-albums{
+    border-radius: 25px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    filter: blur(3px);
+
+    border-top-style: solid;
+    background-color: #2196f3;
+    
+}
+
+.img-albums:hover{
+   filter: blur(0px);
+}
+
+
 
 .album-1{
     grid-column: 2 / 3;
@@ -78,11 +113,10 @@ body{
 .div-carousel{
     display: grid;
     grid-column: 2 / 5;
-    margin-top: 500px;
+    margin-top: 550px;
     margin-left:120px;
     margin-right: 120px;
     margin-bottom: 0px;
-   
 }
 
 .carousel-inner{
