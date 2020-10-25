@@ -25,10 +25,12 @@ body{
     font-size: 30px;
 }
 
+/* css logo */
 .awesome-brand{
     background-color: black;
     color: white;
     height: 600px;
+    font-size: 60px;
 }
 
 /* css subtitule */
@@ -276,6 +278,9 @@ body{
 }
 
 
+/* responsive */
+
+
 /* media para celular */
 @media (min-width: 200px) and (max-width: 500px){
     /* navbar */
@@ -285,6 +290,7 @@ body{
     .navimg{
         margin: auto;
     }
+
 }
 
 /* media para ipad */
