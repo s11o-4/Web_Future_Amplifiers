@@ -356,27 +356,51 @@ body{
         position: absolute;
         font-size: 10px;
     }
-     
-    /* buy card */
+
     .flex-buy{
         display: none;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
 
         margin-left: 10px;
         margin-right: 10px;
+       
     }
 
     .flex-img{
         justify-content: center;
-        align-items: center;
-        position: absolute;
-        
+        align-items: flex-start;
+
         filter: blur(0px);
+        width: auto;
+        height: 200px;
         margin-left: 10px;
         margin-right: 10px;
+        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .5);
+        border-style: solid;
+        border-color: #2196f3;
+        border-width: 1px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
+
+    .buy-content{
+        justify-content: center;
+        align-items: flex-end;
+        
+        border-style: solid;
+        border-color: #2196f3;
+        border-width: 1px;
+        border-radius: 25px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+
 }
 
 /* media para ipad */
