@@ -256,22 +256,26 @@ body{
 /* footer */
 
 .footer{
+  display: flex;
+  justify-content: space-around;
   background-color: black;
   color: wheat;
   height: 150px;
 }
 
-.content-footer{
+.social-media{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    margin-left: 100px;
 }
 
+.icon-social{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 40px;
+    color: #2196f3;
+} 
 
-.foot-logo{
-   align-self: flex-start;
-}
 
 
 /* responsive */
@@ -408,17 +412,45 @@ body{
 
     .btn-buy{
         margin-bottom: 70px;
-        color: #255784;
-        background: #2196f3;
-        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        }
+    
+    /* footer */
+    
+    .footer{
+        display: flex;
+        justify-content: flex-start;
+        background-color: black;
+        color: wheat;
+        height: 150px;
+      }
+      
+      .footer-name{
+          font-size: 20px;
+      }
+
+      .social-media{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      
+      .icon-social{
+          align-items: flex-end;
+          margin-left: 3px;
+          margin-right: 3px;
+          font-size: 30px;
+          color: #2196f3;
+      } 
+      
+    
     }
-
-
-}
-
-/* media para ipad */
-@media (min-width: 500px) and (max-width: 990px){
-    /* navbar */
+    
+    /* media para ipad */
+    @media (min-width: 500px) and (max-width: 990px){
+        /* navbar */
     .navimg{
         margin: auto;
     }
