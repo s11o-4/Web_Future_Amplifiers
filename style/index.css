@@ -421,26 +421,27 @@ body{
     
     .footer{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
         background-color: black;
         color: wheat;
         height: 150px;
       }
       
       .footer-name{
-          font-size: 20px;
+          margin-top: 10px;
+          font-size: 25px;
       }
 
       .social-media{
           display: flex;
-          justify-content: flex-end;
           align-items: center;
+          align-content: flex-end;
       }
       
       .icon-social{
           align-items: flex-end;
-          margin-left: 3px;
-          margin-right: 3px;
+          margin-left: 5px;
+          margin-right: 5px;
           font-size: 30px;
           color: #2196f3;
       } 
