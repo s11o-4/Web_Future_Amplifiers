@@ -104,21 +104,22 @@ body{
 
 /* css para el carrusel */
 
-.div-carousel{
-    margin-top: 550px;
-    margin-left:120px;
-    margin-right: 165px;
-    margin-bottom: 0px;
-}
 
 .carousel-inner{
-    height: 550px;
+    grid-column: 2 / 5;
+    grid-row: auto;
 }
 
-.btn-car{
+.carousel-main{
+    grid-column: 2 / 5;;
+    grid-row: auto;
+}
+
+ .btn-car{
     width: 40px;
     height: 40px;
 }
+
 
 /* referencias */
 .ref{
@@ -435,7 +436,7 @@ body{
     }
     
     /* media para ipad */
-    @media (min-width: 500px) and (max-width: 990px){
+    @media (min-width: 500px) and (max-width: 1300px){
         /* navbar */
     .navimg{
         margin: auto;
@@ -475,25 +476,7 @@ body{
     grid-row: auto;
     }
     
-    .div-carousel{
-       display: none;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    
-    .carousel-inner{
-        height: 550px;
-    }
-    
-    .btn-car{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        width: 40px;
-        height: 40px;
-    }
+    /* carousel */
+ 
 
 }
