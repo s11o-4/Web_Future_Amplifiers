@@ -104,18 +104,22 @@ body{
 
 /* css para el carrusel */
 
+.div-carousel{
+    margin-top: 550px;
+    margin-left:120px;
+    margin-right: 165px;
+    margin-bottom: 0px;
+}
 
 .carousel-inner{
-    grid-column: 2 / 5;
-    grid-row: auto;
+    height: 550px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #2196f3;
+    border-width: 1px;
 }
 
-.carousel-main{
-    grid-column: 2 / 5;;
-    grid-row: auto;
-}
-
- .btn-car{
+.btn-car{
     width: 40px;
     height: 40px;
 }
@@ -339,8 +343,9 @@ body{
     }
 
     .carousel-inner{
-        height: 250px;
+        height: auto;
         background-color: black;
+        border-radius: 15px;
     }
 
     .ref{
@@ -357,8 +362,7 @@ body{
         justify-content: center;
 
         margin-left: 10px;
-        margin-right: 10px;
-       
+        margin-right: 10px;  
     }
 
     .flex-img{
@@ -445,9 +449,12 @@ body{
     .content-grid{
     margin-bottom: 150px;        
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto 3px auto auto;
     grid-auto-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 10px;
+    grid-row-gap: 20px;
+    margin-left:20px;
+    margin-right: 20px;
     
         /* tarjeta completa 600 */
     }
@@ -477,6 +484,53 @@ body{
     }
     
     /* carousel */
- 
+
+    .div-carousel{
+    margin-top: 150px;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .carousel-inner{
+    border-radius: 15px;
+    height: auto;
+    }
+    
+    .btn-car{
+    width: 40px;
+    height: 40px;
+    }
+
+    /* buy card */
+    .img-buy{
+    filter: blur(0px);
+    border-radius: 15px;
+
+    }
+
+    .img-buy{
+    grid-column: 2;
+    margin-left:20px;
+    }
+
+    .btn-buy{
+    grid-column: 3;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    }
+
+    .buy-content{
+    grid-column: 4;
+    margin-right: 20px;
+    margin-left: 10px;
+    }
+    
 
 }
