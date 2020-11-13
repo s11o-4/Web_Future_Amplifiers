@@ -50,24 +50,20 @@ h3 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     line-height: 150px;
+    display: inline-block;
 } 
 
 span{
-    /* opacity: 0; */
+    display: inline-block; 
+    opacity: 0;
     transition: all 1s ease;
-    /* transform: translateY(50px);
-    display: inline-block;  */
+    transform: translateY(50px);
 }
 
 span.fade{
-    /* color: #2196f3; */
-    /* opacity: 1;
-    transform: translateY(0px);     */
-    color: white;
-    letter-spacing: 6px;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s;
+    opacity: 1;
+    color: #2196f3; 
+    transform: translateY(0px);
 }   
 
 .fade:not(.show) {
