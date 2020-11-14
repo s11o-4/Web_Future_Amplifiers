@@ -41,29 +41,29 @@ body{
 /* css del subitulo */
 
 .div-subtitule{
-    height: 300px;
+    height: 300px;  
 }
 
 h3 {
-    color:#e3e4e5;
+    color:black;
     font-size: 3rem;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     line-height: 150px;
-    display: inline-block;
+    font-family: 'Unica One', cursive;
 } 
 
-span{
-    display: inline-block; 
-    opacity: 0;
-    transition: all 1s ease;
-    transform: translateY(50px);
+.span-sub{
+    opacity: 0; 
+    transition: all .6s ease;
 }
 
 span.fade{
     opacity: 1;
-    color: #2196f3; 
-    transform: translateY(0px);
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    border-radius: 2px;
+    transition-delay: 1s;
+    padding: 5px;
 }   
 
 .fade:not(.show) {
@@ -78,11 +78,12 @@ span.fade{
    display: grid;
    grid-template-columns: 100px auto 15px auto 100px;
    grid-auto-rows: 200px;
-   grid-gap: 20px;
+   grid-gap: 25px;
+   transform: translateY(50px);
     /* animacion */
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-name: album_an;
+   animation-duration: 1.5s;
+   animation-delay: 1s;
+   animation-name: album_an;
 }
 
 .card{
@@ -108,6 +109,8 @@ span.fade{
  
 .card-title{
     color: #e3e4e5;
+    font-family: 'Unica One', cursive;
+    font-size: 35px;
 }
 
 .img-albums{
@@ -203,7 +206,7 @@ span.fade{
    grid-row: 1 / 3;
    font-family: 'Montserrat', sans-serif;
    color: #e3e4e5;
-   font-size: 25px;
+   font-size: 20px;
 }
 
 /* boton de compra */
@@ -428,7 +431,7 @@ span.fade{
         margin-top: -40px;
         margin-left: 10px;
         margin-right: 10px;
-        margin-bottom: -20px;
+        margin-bottom: -25px;
         box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .5);
         border-style: solid;
         border-color: #2196f3;

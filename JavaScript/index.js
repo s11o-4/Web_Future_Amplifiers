@@ -11,7 +11,7 @@ const splitTextFilter = splitText.filter(function(letter){
 })
 
 for(let i = 0; i < splitTextFilter.length; i++){
-  text.innerHTML += "<span>" + splitTextFilter[i] + "</span>";// se repite eñ elemento. Por eso es que lo borro
+  text.innerHTML += "<span class='span-sub'>" + splitTextFilter[i] + "</span>";// se repite eñ elemento. Por eso es que lo borro
 }
 
 let char = 0;
