@@ -1,9 +1,10 @@
+//subtitulo
 const text = document.getElementById("fancy")
 const strText = text.textContent; //content of the text
 const splitText = strText.split("")
 text.textContent = ""; // limpio el contenido para que no se vena doble por mi looṕ
 
-
+//subitutlo
 const splitTextFilter = splitText.filter(function(letter){
    if (letter != " " && letter != "\n") {
      return letter
@@ -31,6 +32,8 @@ function complete(){
   clearInterval(timer); 
   timer = null;
 }
+
+
 
 $('.carousel').carousel({
     interval: 2500

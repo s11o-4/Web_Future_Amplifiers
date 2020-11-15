@@ -72,6 +72,14 @@ span.fade{
 
 
 /* css de album */
+@keyframes album_an {
+    from {
+    margin-top: 100%;
+    }
+    to {
+    margin-top: 0%;
+    }
+}
 
 .content-grid{
    margin-bottom: 150px;
@@ -79,12 +87,12 @@ span.fade{
    grid-template-columns: 100px auto 15px auto 100px;
    grid-auto-rows: 200px;
    grid-gap: 25px;
-   transform: translateY(50px);
     /* animacion */
    animation-duration: 1.5s;
    animation-delay: 1s;
    animation-name: album_an;
 }
+
 
 .card{
     background-color:#031321;   
@@ -596,18 +604,12 @@ span.fade{
 }
 
     /* animacion */
-    @keyframes album_an {
-    from {
-    margin-top: 100%;
-    }
-    to {
-    margin-top: 0%;
-    }
-}
+
     @keyframes card_an {
-    from{
+    0%{
     }
-    to {
+
+    100% {
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
