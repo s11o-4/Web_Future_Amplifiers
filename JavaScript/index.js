@@ -4,7 +4,6 @@ const strText = text.textContent; //content of the text
 const splitText = strText.split("")
 text.textContent = ""; // limpio el contenido para que no se vena doble por mi looṕ
 
-//subitutlo
 const splitTextFilter = splitText.filter(function(letter){
    if (letter != " " && letter != "\n") {
      return letter
@@ -33,9 +32,13 @@ function complete(){
   timer = null;
 }
 
+//album
+setInterval(function(){
+  document.getElementById("content-grid").style.marginTop = "0%";
+}, 2000)
 
-
+//carousel
 $('.carousel').carousel({
-    interval: 2500
-  })
+    interval: 1000
+})
 

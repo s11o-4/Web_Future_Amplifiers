@@ -1,8 +1,8 @@
 body{
     /* background-color: #031321; */
     background-color: #031321;
-    font-family: 'Montserrat', sans-serif;  
-} 
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 /* css de navbar */
@@ -17,12 +17,12 @@ body{
     width: 50px;
     height: 50px;
     margin-left: 25px;
-    margin-right: 30px; 
+    margin-right: 30px;
 
     box-shadow: 5px 5px grey;
     border: slategray;
     border-radius: 5px 5px 5px 5px;
-    
+
 }
 .titlenav{
     /* font-family: 'Quicksand', sans-serif; */
@@ -41,7 +41,7 @@ body{
 /* css del subitulo */
 
 .div-subtitule{
-    height: 300px;  
+    height: 300px;
 }
 
 h3 {
@@ -50,10 +50,10 @@ h3 {
     text-align: center;
     line-height: 150px;
     font-family: 'Unica One', cursive;
-} 
+}
 
 .span-sub{
-    opacity: 0; 
+    opacity: 0;
     transition: all .6s ease;
 }
 
@@ -64,25 +64,16 @@ span.fade{
     border-radius: 2px;
     transition-delay: 1s;
     padding: 5px;
-}   
+}
 
 .fade:not(.show) {
     opacity: 1;
 }
 
-
-/* css de album */
-@keyframes album_an {
-    from {
-    margin-top: 100%;
-    }
-    to {
-    margin-top: 0%;
-    }
-}
-
+/* album */
 .content-grid{
    margin-bottom: 150px;
+   margin-top: 100%;
    display: grid;
    grid-template-columns: 100px auto 15px auto 100px;
    grid-auto-rows: 200px;
@@ -95,26 +86,26 @@ span.fade{
 
 
 .card{
-    background-color:#031321;   
+    background-color:#031321;
     border-style: solid;
     border-radius: 25px;
     border-width: 1px;
     border-color: #2196f3;
     /* animacion */
-    animation-duration: 1.5s;
+    /* animation-duration: 1.5s;
     animation-delay: 2s;
-    animation-name: card_an;
+    animation-name: card_an; */
 }
 
 
 .card-body{
-    background-color:#031321;   
+    background-color:#031321;
     border-top-style: solid;
     border-width: 1px;
     border-color: #2196f3;
     color: #e3e4e5;
 }
- 
+
 .card-title{
     color: #e3e4e5;
     font-family: 'Unica One', cursive;
@@ -129,7 +120,7 @@ span.fade{
 
     border-top-style: solid;
     background-color: #2196f3;
-    
+
 }
 
 .img-albums:hover{
@@ -231,8 +222,8 @@ span.fade{
     transition: 0.2s;
 
     background-color: #031321;
-    font-family: monospace; 
-   
+    font-family: monospace;
+
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     align-self: center;
@@ -329,7 +320,7 @@ span.fade{
     margin-right: 30px;
     font-size: 40px;
     color: #2196f3;
-} 
+}
 
 
 
@@ -343,9 +334,9 @@ span.fade{
     .navimg{
         margin: auto;
     }
-    
+
     /* targets */
-    
+
     .content-grid{
         display: grid;
         grid-template-columns: auto;
@@ -356,7 +347,7 @@ span.fade{
         /* grid-row-gap: none; */
         margin-bottom: 0px;
     }
-    
+
     .card{
         margin-left: 10px;
         margin-right: 10px;
@@ -379,25 +370,25 @@ span.fade{
         align-content: center;
         justify-content: center;
     }
-   
+
      .album-3{
         grid-column: auto;
         grid-row: 3 / 4;
         align-content: center;
         justify-content: center;
-    } 
-    
+    }
+
     .album-4{
         grid-column: auto;
         grid-row: 4 / 5;
         align-content: center;
         justify-content: center;
-    } 
+    }
 
     .img-albums{
         filter: blur(0px);
      }
-    
+
      /* carousel */
     .div-carousel{
         margin-top: 70px;
@@ -426,7 +417,7 @@ span.fade{
         justify-content: center;
 
         margin-left: 10px;
-        margin-right: 10px;  
+        margin-right: 10px;
     }
 
     .flex-img{
@@ -444,9 +435,9 @@ span.fade{
         border-style: solid;
         border-color: #2196f3;
         border-width: 2px;
-        border-radius: 25px;   
+        border-radius: 25px;
         border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px; 
+        border-bottom-right-radius: 0px;
     }
 
     .buy-content{
@@ -457,11 +448,11 @@ span.fade{
         border-width: 2px;
         border-radius: 25px;
         margin-left: 10px;
-        margin-right: 10px;     
+        margin-right: 10px;
         margin-bottom: 50px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        padding-top: 10px;   
+        padding-top: 10px;
         font-size: 17px;
     }
 
@@ -471,9 +462,9 @@ span.fade{
         background: #2196f3;
         box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
         }
-    
+
     /* footer */
-    
+
     .footer{
         display: flex;
         justify-content: space-around;
@@ -481,7 +472,7 @@ span.fade{
         color: wheat;
         height: 150px;
       }
-      
+
       .footer-name{
           margin-top: 10px;
           font-size: 25px;
@@ -492,18 +483,18 @@ span.fade{
           align-items: center;
           align-content: flex-end;
       }
-      
+
       .icon-social{
           align-items: flex-end;
           margin-left: 5px;
           margin-right: 5px;
           font-size: 30px;
           color: #2196f3;
-      } 
-      
-    
+      }
+
+
     }
-    
+
     /* media para ipad */
     @media (min-width: 500px) and (max-width: 1300px){
         /* navbar */
@@ -512,7 +503,7 @@ span.fade{
     }
 
     .content-grid{
-    margin-bottom: 150px;        
+    margin-bottom: 150px;
     display: grid;
     grid-template-columns: auto auto 3px auto auto;
     grid-auto-rows: auto;
@@ -521,11 +512,11 @@ span.fade{
     margin-left:20px;
     margin-right: 20px;
     }
-     
+
     .img-albums{
     filter: blur(0px);
     }
-     
+
     .card-text{
     font-size: 17px;
     }
@@ -534,22 +525,22 @@ span.fade{
     grid-column: 2 / 3;
     grid-row: auto;
     }
-     
+
     .album-2{
     grid-column: 4 / 5;
     grid-row: auto;
     }
-     
+
     .album-3{
     grid-column: 2 / 3;
     grid-row: auto;
     }
-     
+
     .album-4{
     grid-column: 4 / 5;
     grid-row: auto;
     }
-    
+
     /* carousel */
 
     .div-carousel{
@@ -558,12 +549,12 @@ span.fade{
     margin-right: 20px;
     margin-bottom: 20px;
     }
-    
+
     .carousel-inner{
     border-radius: 15px;
     height: auto;
     }
-    
+
     .btn-car{
     width: 40px;
     height: 40px;
@@ -584,10 +575,10 @@ span.fade{
     .btn-buy{
     grid-column: 3;
     margin-top: 120px;
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
-    
+
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
@@ -605,6 +596,16 @@ span.fade{
 
     /* animacion */
 
+    /* css de album */
+    /* @keyframes album_an {
+        from {
+        margin-top: 100%;
+        }
+        to {
+        margin-top: 0%;
+        }
+    }
+
     @keyframes card_an {
     0%{
     }
@@ -613,8 +614,8 @@ span.fade{
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s; 
+    transition-delay: 1s;
     }
-    
-}
+
+} */
 
