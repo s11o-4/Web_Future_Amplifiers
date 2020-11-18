@@ -93,7 +93,7 @@ span.fade{
     border-color: #2196f3;
     /* animacion */
     animation-duration: 1.5s;
-    animation-delay: 2s;
+    animation-delay: 2.4s;
     animation-name: card_an; 
 }
 
@@ -607,14 +607,21 @@ span.fade{
     }
 
     @keyframes card_an {
-    from{
-    }
-    to {
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s;
-    }
+    
+        0%{
 
-} 
+        }
+        25% {
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 2.5px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        transition-delay: 1s;
+        }
+        50% {
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 2.5px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        transition-delay: 1s;
+        }
+    } 
 
