@@ -501,7 +501,8 @@ span.fade{
     .navimg{
         margin: auto;
     }
-
+     
+    /* album */
     .content-grid{
     margin-bottom: 150px;
     display: grid;

@@ -1,46 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <!-- bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <!-- normalize -->
+    <link rel="stylesheet" href="./style/normalize.css" type="text/css">
+    
+    <!-- css files -->
+    <link rel="stylesheet" href="./style/features.css" type="text/css">
+
     <title>Features</title>
 </head>
 <body>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #031321;">
+      <a href="./index.html" class="navbar-brand">
+          <img src="./images/spiderman.jpg" width="30" height="30" class="navimg d-inline-block align-top " alt="Spider">
+      </a>
+
+      <span class="titlenav navbar-brand ml-3 mr-4" style="color:#e3e4e5;">Spider Web</span>
+
+      <button class="main-boton btn btn-outline-info navbar-toggler" style="background-color: #2196f3;" type="button" aria-expanded="false" aria-controls="datanav" aria-label="Toggle navigation" data-toggle="collapse" data-target="#content">
+          <span class="navbar-toggler-icon" style="background-color:#2196f3;"></span>
+      </button>
+
+      <nav class="datanav collapse navbar-collapse justify-content-end" id="content">
+
+          <ul class="navbar-nav mx-3">
+              <li class="nav-item active mx-2">
+                  <a class="nav-link" href="./features.html" style="color:#e3e4e5;">Features</a>
+              </li>
+              <li class="nav-item active mx-2">
+                  <a class="nav-link" href="#" style="color:#e3e4e5;">Other projects</a>
+              </li>
+              <li class="nav-item active mx-2">
+                  <a class="nav-link" href="#" style="color:#e3e4e5;">About us</a>
+              </li>
+              <li class="nav-item active mx-2">
+                  <a class="nav-link" href="#" style="color:#e3e4e5;">Support</a>
+              </li>
+          </ul>
+
+      </nav>
+  </nav>
+
+  <div class="container mt-5 mb-5 text-center display-3">
+    <h3 id="subtitule">
+      Features 
+    </h3>
+  </div>
+    <!-- Table with specifies -->
+    <table class="table_css table">
+        <tr>
+          <th>General</th>
+        </tr>
+        <tr>
+          <td>22w</td>
+        </tr>
+        <tr>
+          <td>big</td>
+        </tr>
+        <tr>
+          <td>calidad</td>
+        </tr>
       </table>
+      <br>
+      <br>
+      <br>
+    <table class="table_css table">
+      <tr>
+        <th>Electronics</th>
+      </tr>
+      <tr>
+        <td>calibre 22</td>
+      </tr>
+      <tr>
+        <td>input big</td>
+      </tr>
+      <tr>
+        <td>clase ab</td>
+      </tr>
+    </table>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./JavaScript/features.js"></script>
 </body>
 </html>
