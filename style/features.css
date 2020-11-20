@@ -1,6 +1,8 @@
 body{
     background-color: #031321;
     font-family: 'Montserrat', sans-serif;
+    /* padding-right: 100px;
+    padding-left: 100px; */
 }
 
 
@@ -11,6 +13,7 @@ body{
     margin-right: 10px;
     color: #e3e4e5;
     margin-bottom: 40px;
+
 }
 .navimg{
     width: 50px;
@@ -77,13 +80,11 @@ span.fade{
 .sub_tab{
     color: #2196f3;
     font-size: 25px;
-    margin-left: 110px;
-    margin-right: auto;
     font-size: 30px;
 }
 
 .table_design{
-    margin-left: 100px;
+    margin-left: auto;
     margin-right: auto;
     color: #e3e4e5;
     font-family: 'Montserrat';
@@ -91,6 +92,26 @@ span.fade{
 }
 
 
+
 .content_tab{
     font-size: 15px;
+ 
+}
+
+
+@media (min-width: 200px) and (max-width: 500px){
+    /* navbar */
+    .titlenav{
+      visibility: hidden;
+    }
+    .navimg{
+        margin: auto;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1300px){
+    /* navbar */
+.navimg{
+    margin: auto;
+    }
 }
