@@ -73,22 +73,22 @@ span.fade{
 
 
 /* table style */
-.table_css{
-    border-color: #2196f3;
+.features{
     width: 200px;
     color: #e3e4e5;
     margin-left: 100px;
     margin-right: auto;
+    font-size: 20px;
+    display: inline-block;
 }
 
 .title_tab{
     color: #2196f3;
-    margin-right: 0px;
+    font-size: 30px;
 }
 
-
-.items{
-    color: #e3e4e5;
+.title_sub{
+    margin: 10px;
 }
 
 /* responsive */
