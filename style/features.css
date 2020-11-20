@@ -55,7 +55,7 @@ h3 {
 
 .span-sub{
     opacity: 0;
-    transition: all .6s ease;
+    transition: all .5s ease;
 }
 
 span.fade{
@@ -75,12 +75,17 @@ span.fade{
 /* table style */
 .table_css{
     border-color: #2196f3;
+    width: 200px;
     color: #e3e4e5;
     margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 25px;
-    width: 500px;
+    margin-right: auto;
 }
+
+.title_tab{
+    color: #2196f3;
+    margin-right: 0px;
+}
+
 
 .items{
     color: #e3e4e5;
