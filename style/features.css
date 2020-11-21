@@ -76,6 +76,17 @@ span.fade{
 
 
 /* table style */
+.table_element_title{
+    display: inline-block;
+    width: 135px ;
+    margin-right: 100px;
+}
+
+.table_element_content{
+    display: inline-block;
+    width: 135px;
+    margin-right: 100px;
+}
 
 .sub_tab{
     color: #2196f3;
@@ -84,19 +95,15 @@ span.fade{
 }
 
 .table_design{
-    margin-left: auto;
-    margin-right: auto;
     color: #e3e4e5;
     font-family: 'Montserrat';
     font-size: 18px;
+    margin-bottom: 50px;
 }
 
 
 
-.content_tab{
-    font-size: 15px;
- 
-}
+
 
 
 @media (min-width: 200px) and (max-width: 500px){
