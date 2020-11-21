@@ -1,8 +1,6 @@
 body{
     background-color: #031321;
     font-family: 'Montserrat', sans-serif;
-    /* padding-right: 100px;
-    padding-left: 100px; */
 }
 
 
@@ -87,6 +85,7 @@ span.fade{
     width: 135px;
     margin-right: 100px;
 }
+
 
 .sub_tab{
     color: #2196f3;
