@@ -77,6 +77,7 @@ span.fade{
 
 /* table style */
 
+
 .sub_tab{
     color: #2196f3;
     font-size: 25px;
@@ -99,6 +100,8 @@ span.fade{
 }
 
 
+/* Responsive */
+/* cellphone */
 @media (min-width: 200px) and (max-width: 500px){
     /* navbar */
     .titlenav{
@@ -109,9 +112,28 @@ span.fade{
     }
 }
 
+/* ipad */
 @media (min-width: 500px) and (max-width: 1300px){
     /* navbar */
 .navimg{
     margin: auto;
     }
+}
+
+/* large / computers / PC */
+
+@media (min-width: 1350px){
+
+    .table_element_title{
+        display: inline-block;
+        width: 135px;
+        margin-right: 100px;
+    }
+    
+    .table_element_content{
+    display: inline-block;
+    width: 135px;
+    margin-right: 100px;
+    }
+
 }
