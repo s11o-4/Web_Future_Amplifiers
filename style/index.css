@@ -502,6 +502,9 @@ span.fade{
           font-size: 30px;
           color: #2196f3;
       }
+      #ultimo_boton{
+          margin-right: 30px;
+      }
 
 
     }
@@ -601,6 +604,11 @@ span.fade{
     margin-right: 20px;
     margin-left: 15px;
     font-size: 18px;
+    }
+
+    .footer-name{
+        margin-top: 15px;
+        font-size: 30px;
     }
 
 

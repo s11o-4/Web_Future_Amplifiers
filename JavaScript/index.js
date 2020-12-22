@@ -1,8 +1,13 @@
-//subtitulo
+//Subtitule
 const text = document.getElementById("fancy")
 const strText = text.textContent; //content of the text
 const splitText = strText.split("")
 text.textContent = ""; // limpio el contenido para que no se vena doble por mi looṕ
+
+//Measuements of the page
+let width_now = screen.width
+let height_now = screen.height
+
 
 const splitTextFilter = splitText.filter(function(letter){
    if (letter != " " && letter != "\n") {
@@ -42,3 +47,12 @@ $('.carousel').carousel({
     interval: 1000
 })
 
+
+
+
+//Logo Future Amplifiers for cellphone
+
+if (width_now <= 200 || width_now <= 500){
+  document.getElementById("future_amplifiers").src = "./images/FuturAmplifiersV4_mini.jpg"
+  document.getElementById("future_amplifiers").style.width = "350px"
+}  
