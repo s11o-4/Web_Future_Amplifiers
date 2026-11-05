@@ -1,0 +1,20 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor/IDE artifacts
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+debug.log
+
+# Node modules (if this ever gets a build step)
+node_modules/
+
+# Empty placeholder directory
+Web_Future_Amplifiers/

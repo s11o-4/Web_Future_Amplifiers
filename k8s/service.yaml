@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: future-amplifiers
+  namespace: future-amplifiers
+  labels:
+    app.kubernetes.io/name: future-amplifiers
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: future-amplifiers
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP

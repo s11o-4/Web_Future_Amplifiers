@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: future-amplifiers
+  namespace: future-amplifiers
+  labels:
+    app.kubernetes.io/name: future-amplifiers
+    app.kubernetes.io/part-of: future-amplifiers
+spec:
+  # Adjust the replica count to your needs
+  replicas: 3
+  revisionHistoryLimit: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: future-amplifiers
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: future-amplifiers
+    spec:
+      # Run the pod as non-root to satisfy container security policies
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 101          # the "nginx" user in nginx:alpine
+        runAsGroup: 101
+        fsGroup: 101
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: future-amplifiers
+          # Replace with your private registry image:
+          # docker build -t <registry>/<repo>/future-amplifiers:<tag> .
+          image: registry.example.com/web/future-amplifiers:latest
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 10m
+              memory: 16Mi
+            limits:
+              cpu: 200m
+              memory: 64Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL
+          # Liveness: container is up and serving
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          # Readiness: container is ready to receive traffic
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
+          # nginx needs a writable tmp dir; mount an emptyDir
+          volumeMounts:
+            - name: nginx-tmp
+              mountPath: /tmp
+      volumes:
+        - name: nginx-tmp
+          emptyDir: {}

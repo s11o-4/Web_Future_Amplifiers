@@ -1,0 +1,26 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Editor/IDE artifacts
+.vs
+.vscode
+.idea
+*.suo
+*.user
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs and build output
+*.log
+debug.log
+
+# Docker/npm files that don't belong in the image
+Dockerfile
+.dockerignore
+docker-compose*.yml
+k8s/
+README.md
