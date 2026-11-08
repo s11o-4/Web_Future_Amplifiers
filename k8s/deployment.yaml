@@ -23,6 +23,8 @@ spec:
       labels:
         app.kubernetes.io/name: future-amplifiers
     spec:
+      imagePullSecrets:
+        - name: regcred
       # Run the pod as non-root to satisfy container security policies
       securityContext:
         runAsNonRoot: true
@@ -33,10 +35,8 @@ spec:
           type: RuntimeDefault
       containers:
         - name: future-amplifiers
-          # Replace with your private registry image:
-          # docker build -t <registry>/<repo>/future-amplifiers:<tag> .
-          image: registry.example.com/web/future-amplifiers:latest
-          imagePullPolicy: Always
+          image: registry.s11o.me/web-future-amplifiers:0.0.0
+          imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 8080

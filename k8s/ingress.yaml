@@ -6,15 +6,15 @@ metadata:
   labels:
     app.kubernetes.io/name: future-amplifiers
   annotations:
-    # Replace "nginx" below if you use a different Ingress controller
-    # (e.g. traefik, haproxy, contour) or a cloud-specific controller.
-    kubernetes.io/ingress.class: nginx
-    # Optional: force HTTPS via cert-manager
-    # cert-manager.io/cluster-issuer: letsencrypt-prod
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - amplifiers.s11o.me
+      secretName: amplifiers-tls
   rules:
-    - host: amplifiers.example.com   # <-- replace with your real domain
+    - host: amplifiers.s11o.me
       http:
         paths:
           - path: /
@@ -24,8 +24,3 @@ spec:
                 name: future-amplifiers
                 port:
                   name: http
-  # Enable once you have cert-manager provisioned:
-  # tls:
-  #   - hosts:
-  #       - amplifiers.example.com
-  #     secretName: amplifiers-tls
